@@ -4,9 +4,11 @@
   "expo": {
     "name": "react-native-pdf417-svg-example",
     "slug": "react-native-pdf417-svg-example",
+    "owner": "giautm",
     "description": "Example app for react-native-pdf417-svg",
     "privacy": "public",
     "version": "1.0.0",
+    "sdkVersion": "42.0.0",
     "platforms": [
       "ios",
       "android",

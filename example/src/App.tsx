@@ -1,18 +1,12 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-pdf417-svg';
+import { StyleSheet, View } from 'react-native';
+import PDF417 from 'react-native-pdf417-svg';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <PDF417 height={60} width={380} text="mailto:hello@giautm.dev" />
     </View>
   );
 }
