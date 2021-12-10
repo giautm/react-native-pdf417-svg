@@ -10,12 +10,16 @@ npm install react-native-pdf417-svg
 
 ## Usage
 
-```js
-import { multiply } from "react-native-pdf417-svg";
+```tsx
+import PDF417 from 'react-native-pdf417-svg';
 
-// ...
-
-const result = await multiply(3, 7);
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <PDF417 height={60} width={380} text="mailto:hello@giautm.dev" />
+    </View>
+  );
+}
 ```
 
 ## Contributing
